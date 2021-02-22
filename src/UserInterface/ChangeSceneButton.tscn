@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://src/UserInterface/ChangeSceneButton.gd" type="Script" id=1]
+[ext_resource path="res://src/UserInterface/non_selected_button.tres" type="StyleBox" id=2]
+[ext_resource path="res://src/UserInterface/selected_button.tres" type="StyleBox" id=3]
+
+[node name="PlayButton" type="Button"]
+margin_right = 465.0
+margin_bottom = 92.0
+size_flags_vertical = 3
+custom_styles/hover = ExtResource( 3 )
+custom_styles/pressed = ExtResource( 3 )
+custom_styles/focus = ExtResource( 3 )
+custom_styles/normal = ExtResource( 2 )
+text = "Play"
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="button_up" from="." to="." method="_on_button_up"]

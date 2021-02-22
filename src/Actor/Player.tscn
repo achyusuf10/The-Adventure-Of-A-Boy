@@ -1,0 +1,189 @@
+[gd_scene load_steps=63 format=2]
+
+[ext_resource path="res://assets/Sprite/Player (No Weapon)/DEAD/2.png" type="Texture" id=1]
+[ext_resource path="res://src/Actor/Player.gd" type="Script" id=2]
+[ext_resource path="res://assets/Sprite/Player (No Weapon)/RUN/2.png" type="Texture" id=3]
+[ext_resource path="res://assets/Sprite/Player (No Weapon)/DEAD/15.png" type="Texture" id=4]
+[ext_resource path="res://assets/Sprite/Player (No Weapon)/RUN/12.png" type="Texture" id=5]
+[ext_resource path="res://assets/Sprite/Player (No Weapon)/DEAD/13.png" type="Texture" id=6]
+[ext_resource path="res://assets/Sprite/Player (No Weapon)/IDLE/6.png" type="Texture" id=7]
+[ext_resource path="res://assets/Sprite/Player (No Weapon)/DEAD/5.png" type="Texture" id=8]
+[ext_resource path="res://assets/Sprite/Player (No Weapon)/IDLE/15.png" type="Texture" id=9]
+[ext_resource path="res://assets/Sprite/Player (No Weapon)/DEAD/10.png" type="Texture" id=10]
+[ext_resource path="res://assets/Sprite/Player (No Weapon)/IDLE/7.png" type="Texture" id=11]
+[ext_resource path="res://assets/Sprite/Player (No Weapon)/RUN/5.png" type="Texture" id=12]
+[ext_resource path="res://assets/Sprite/Player (No Weapon)/RUN/6.png" type="Texture" id=13]
+[ext_resource path="res://assets/Sprite/Player (No Weapon)/IDLE/4.png" type="Texture" id=14]
+[ext_resource path="res://assets/Sprite/Player (No Weapon)/RUN/15.png" type="Texture" id=15]
+[ext_resource path="res://assets/Sprite/Player (No Weapon)/IDLE/3.png" type="Texture" id=16]
+[ext_resource path="res://assets/Sprite/Player (No Weapon)/RUN/1.png" type="Texture" id=17]
+[ext_resource path="res://assets/Sprite/Player (No Weapon)/DEAD/1.png" type="Texture" id=18]
+[ext_resource path="res://assets/Sprite/Player (No Weapon)/JUMP/11.png" type="Texture" id=19]
+[ext_resource path="res://assets/Sprite/Player (No Weapon)/IDLE/5.png" type="Texture" id=20]
+[ext_resource path="res://assets/Sprite/Player (No Weapon)/JUMP/14.png" type="Texture" id=21]
+[ext_resource path="res://assets/Sprite/Player (No Weapon)/DEAD/4.png" type="Texture" id=22]
+[ext_resource path="res://assets/Sprite/Player (No Weapon)/JUMP/8.png" type="Texture" id=23]
+[ext_resource path="res://assets/Sprite/Player (No Weapon)/DEAD/6.png" type="Texture" id=24]
+[ext_resource path="res://assets/Sprite/Player (No Weapon)/JUMP/7.png" type="Texture" id=25]
+[ext_resource path="res://assets/Sprite/Player (No Weapon)/RUN/10.png" type="Texture" id=26]
+[ext_resource path="res://assets/Sprite/Player (No Weapon)/RUN/9.png" type="Texture" id=27]
+[ext_resource path="res://assets/Sprite/Player (No Weapon)/IDLE/12.png" type="Texture" id=28]
+[ext_resource path="res://assets/Sprite/Player (No Weapon)/DEAD/12.png" type="Texture" id=29]
+[ext_resource path="res://assets/Sprite/Player (No Weapon)/JUMP/15.png" type="Texture" id=30]
+[ext_resource path="res://assets/Sprite/Player (No Weapon)/DEAD/9.png" type="Texture" id=31]
+[ext_resource path="res://assets/Sprite/Player (No Weapon)/IDLE/8.png" type="Texture" id=32]
+[ext_resource path="res://assets/Sprite/Player (No Weapon)/RUN/3.png" type="Texture" id=33]
+[ext_resource path="res://assets/Sprite/Player (No Weapon)/RUN/13.png" type="Texture" id=34]
+[ext_resource path="res://assets/Sprite/Player (No Weapon)/DEAD/11.png" type="Texture" id=35]
+[ext_resource path="res://assets/Sprite/Player (No Weapon)/RUN/4.png" type="Texture" id=36]
+[ext_resource path="res://assets/Sprite/Player (No Weapon)/JUMP/5.png" type="Texture" id=37]
+[ext_resource path="res://assets/Sprite/Player (No Weapon)/DEAD/7.png" type="Texture" id=38]
+[ext_resource path="res://assets/Sprite/Player (No Weapon)/DEAD/3.png" type="Texture" id=39]
+[ext_resource path="res://assets/Sprite/Player (No Weapon)/JUMP/13.png" type="Texture" id=40]
+[ext_resource path="res://assets/Sprite/Player (No Weapon)/IDLE/2.png" type="Texture" id=41]
+[ext_resource path="res://assets/Sprite/Player (No Weapon)/IDLE/9.png" type="Texture" id=42]
+[ext_resource path="res://assets/Sprite/Player (No Weapon)/IDLE/11.png" type="Texture" id=43]
+[ext_resource path="res://assets/Sprite/Player (No Weapon)/JUMP/6.png" type="Texture" id=44]
+[ext_resource path="res://assets/Sprite/Player (No Weapon)/IDLE/14.png" type="Texture" id=45]
+[ext_resource path="res://assets/Sprite/Player (No Weapon)/IDLE/1.png" type="Texture" id=46]
+[ext_resource path="res://assets/Sprite/Player (No Weapon)/DEAD/8.png" type="Texture" id=47]
+[ext_resource path="res://assets/Sprite/Player (No Weapon)/RUN/8.png" type="Texture" id=48]
+[ext_resource path="res://assets/Sprite/Player (No Weapon)/JUMP/12.png" type="Texture" id=49]
+[ext_resource path="res://assets/Sprite/Player (No Weapon)/DEAD/14.png" type="Texture" id=50]
+[ext_resource path="res://assets/Sprite/Player (No Weapon)/IDLE/13.png" type="Texture" id=51]
+[ext_resource path="res://assets/Sprite/Player (No Weapon)/RUN/7.png" type="Texture" id=52]
+[ext_resource path="res://assets/Sprite/Player (No Weapon)/IDLE/10.png" type="Texture" id=53]
+[ext_resource path="res://assets/Sprite/Player (No Weapon)/RUN/11.png" type="Texture" id=54]
+[ext_resource path="res://assets/Sprite/Player (No Weapon)/RUN/14.png" type="Texture" id=55]
+[ext_resource path="res://assets/Sprite/Player (No Weapon)/JUMP/4.png" type="Texture" id=56]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 46 ), ExtResource( 41 ), ExtResource( 16 ), ExtResource( 14 ), ExtResource( 20 ), ExtResource( 7 ), ExtResource( 11 ), ExtResource( 32 ), ExtResource( 42 ), ExtResource( 53 ), ExtResource( 43 ), ExtResource( 28 ), ExtResource( 51 ), ExtResource( 45 ), ExtResource( 9 ) ],
+"loop": true,
+"name": "IDLE",
+"speed": 14.0
+}, {
+"frames": [ ExtResource( 17 ), ExtResource( 3 ), ExtResource( 33 ), ExtResource( 36 ), ExtResource( 12 ), ExtResource( 13 ), ExtResource( 52 ), ExtResource( 48 ), ExtResource( 27 ), ExtResource( 26 ), ExtResource( 54 ), ExtResource( 5 ), ExtResource( 34 ), ExtResource( 55 ), ExtResource( 15 ) ],
+"loop": true,
+"name": "RUN",
+"speed": 14.0
+}, {
+"frames": [ ExtResource( 18 ), ExtResource( 1 ), ExtResource( 39 ), ExtResource( 22 ), ExtResource( 8 ), ExtResource( 24 ), ExtResource( 38 ), ExtResource( 47 ), ExtResource( 31 ), ExtResource( 10 ), ExtResource( 35 ), ExtResource( 29 ), ExtResource( 6 ), ExtResource( 50 ), ExtResource( 4 ) ],
+"loop": false,
+"name": "DEATH",
+"speed": 16.0
+}, {
+"frames": [ ExtResource( 19 ), ExtResource( 49 ), ExtResource( 40 ), ExtResource( 21 ), ExtResource( 30 ) ],
+"loop": true,
+"name": "JUMP DOWN",
+"speed": 7.0
+}, {
+"frames": [ ExtResource( 56 ), ExtResource( 37 ), ExtResource( 44 ), ExtResource( 25 ), ExtResource( 23 ) ],
+"loop": true,
+"name": "JUMP UP",
+"speed": 7.0
+} ]
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 32.4365, 71.6665 )
+
+[sub_resource type="RectangleShape2D" id=3]
+extents = Vector2( 27.4887, 69.4964 )
+
+[sub_resource type="RectangleShape2D" id=4]
+extents = Vector2( 33.0602, 3.8592 )
+
+[sub_resource type="Animation" id=5]
+tracks/0/type = "value"
+tracks/0/path = NodePath("WhenDie/ColorRect:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 0, 0, 0, 0 ), Color( 0, 0, 0, 1 ) ]
+}
+
+[sub_resource type="Animation" id=6]
+tracks/0/type = "value"
+tracks/0/path = NodePath("WhenDie/ColorRect:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 0, 0, 0, 0 ) ]
+}
+
+[node name="Player" type="KinematicBody2D"]
+collision_mask = 8
+script = ExtResource( 2 )
+speed = Vector2( 800, 1450 )
+gravity = 2500.0
+stomp_impulse = 1250
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+position = Vector2( 0, -79.631 )
+frames = SubResource( 1 )
+animation = "JUMP DOWN"
+frame = 2
+playing = true
+
+[node name="Camera2D" type="Camera2D" parent="."]
+current = true
+limit_left = 0
+limit_top = -1000000
+limit_bottom = 1080
+limit_smoothed = true
+smoothing_enabled = true
+drag_margin_left = 0.0
+drag_margin_right = 0.0
+
+[node name="TrapDetector" type="Area2D" parent="."]
+position = Vector2( 0, -5.24407 )
+collision_layer = 0
+collision_mask = 18
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TrapDetector"]
+modulate = Color( 0.501961, 0.00392157, 0.87451, 1 )
+light_mask = -2147483647
+position = Vector2( 0, -70 )
+shape = SubResource( 2 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( 0, -76 )
+shape = SubResource( 3 )
+
+[node name="StompDetector" type="Area2D" parent="."]
+position = Vector2( -0.374577, -5.43136 )
+collision_layer = 0
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StompDetector"]
+position = Vector2( -2.86102e-05, 2.6226e-06 )
+shape = SubResource( 4 )
+
+[node name="WhenDie" type="CanvasLayer" parent="."]
+
+[node name="ColorRect" type="ColorRect" parent="WhenDie"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color( 0, 0, 0, 0 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+autoplay = "start"
+anims/fade_out = SubResource( 5 )
+anims/start = SubResource( 6 )
+[connection signal="animation_finished" from="AnimatedSprite" to="." method="_on_AnimatedSprite_animation_finished"]
+[connection signal="body_entered" from="TrapDetector" to="." method="_on_TrapDetector_body_entered"]
+[connection signal="area_entered" from="StompDetector" to="." method="_on_StompDetector_area_entered"]

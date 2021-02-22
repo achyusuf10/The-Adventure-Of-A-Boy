@@ -1,0 +1,47 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://assets/Tile/Traps/SwingingBladeWithCain.png" type="Texture" id=1]
+
+[sub_resource type="Animation" id=1]
+resource_name = "swing"
+length = 2.6
+loop = true
+step = 0.05
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:rotation_degrees")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.7, 1.3, 1.95, 2.6 ),
+"transitions": PoolRealArray( 1.8, 0.8, 1.8, 0.8, 1.8 ),
+"update": 0,
+"values": [ 60.0, 0.0, -60.0, 0.0, 60.0 ]
+}
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 10, 74.2508 )
+
+[sub_resource type="CircleShape2D" id=3]
+radius = 51.2593
+
+[node name="SwingingBlade" type="StaticBody2D"]
+rotation = 1.0472
+collision_layer = 16
+
+[node name="SwingingBladeWithCain" type="Sprite" parent="."]
+texture = ExtResource( 1 )
+offset = Vector2( 0.406651, 119.027 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+autoplay = "swing"
+anims/swing = SubResource( 1 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( -0.420425, 59.4892 )
+shape = SubResource( 2 )
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="."]
+position = Vector2( -1.13684, 138.194 )
+shape = SubResource( 3 )

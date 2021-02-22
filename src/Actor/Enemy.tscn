@@ -1,0 +1,63 @@
+[gd_scene load_steps=19 format=2]
+
+[ext_resource path="res://src/Actor/Enemy.gd" type="Script" id=1]
+[ext_resource path="res://assets/Sprite/Enemy/10.png" type="Texture" id=2]
+[ext_resource path="res://assets/Sprite/Enemy/8.png" type="Texture" id=3]
+[ext_resource path="res://assets/Sprite/Enemy/13.png" type="Texture" id=4]
+[ext_resource path="res://assets/Sprite/Enemy/11.png" type="Texture" id=5]
+[ext_resource path="res://assets/Sprite/Enemy/12.png" type="Texture" id=6]
+[ext_resource path="res://assets/Sprite/Enemy/14.png" type="Texture" id=7]
+[ext_resource path="res://assets/Sprite/Enemy/3.png" type="Texture" id=8]
+[ext_resource path="res://assets/Sprite/Enemy/5.png" type="Texture" id=9]
+[ext_resource path="res://assets/Sprite/Enemy/1.png" type="Texture" id=10]
+[ext_resource path="res://assets/Sprite/Enemy/6.png" type="Texture" id=11]
+[ext_resource path="res://assets/Sprite/Enemy/9.png" type="Texture" id=12]
+[ext_resource path="res://assets/Sprite/Enemy/7.png" type="Texture" id=13]
+[ext_resource path="res://assets/Sprite/Enemy/2.png" type="Texture" id=14]
+[ext_resource path="res://assets/Sprite/Enemy/4.png" type="Texture" id=15]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 10 ), ExtResource( 14 ), ExtResource( 8 ), ExtResource( 9 ), ExtResource( 15 ), ExtResource( 11 ), ExtResource( 13 ), ExtResource( 12 ), ExtResource( 3 ), ExtResource( 2 ), ExtResource( 5 ), ExtResource( 6 ), ExtResource( 4 ), ExtResource( 7 ) ],
+"loop": true,
+"name": "WALK",
+"speed": 12.0
+} ]
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 31.1558, 43.4548 )
+
+[sub_resource type="RectangleShape2D" id=3]
+extents = Vector2( 36.1882, 10.5328 )
+
+[node name="Enemy" type="KinematicBody2D"]
+collision_layer = 2
+collision_mask = 8
+script = ExtResource( 1 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+position = Vector2( -1.6837, -58.9293 )
+frames = SubResource( 1 )
+animation = "WALK"
+frame = 11
+playing = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( -1.05946, -44.5946 )
+shape = SubResource( 2 )
+
+[node name="StompArea2D" type="Area2D" parent="."]
+position = Vector2( 0, -66.4549 )
+collision_layer = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StompArea2D"]
+position = Vector2( -1.05946, -27.4503 )
+shape = SubResource( 3 )
+
+[node name="VisibilityEnabler2D" type="VisibilityEnabler2D" parent="."]
+visible = false
+position = Vector2( 0, -33 )
+rect = Rect2( -50, -33, 100, 66 )
+process_parent = true
+physics_process_parent = true
+[connection signal="area_entered" from="StompArea2D" to="." method="_on_StompArea2D_area_entered"]
